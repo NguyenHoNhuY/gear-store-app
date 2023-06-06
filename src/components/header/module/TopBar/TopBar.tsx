@@ -10,7 +10,7 @@ const TopBar = (props: Props) => {
     const [displayClass, setDisplayClass] = useState<string>("");
 
     useEffect(() => {
-        if (window.scrollY) setY(window.scrollY);
+        if (window) setY(window.scrollY);
     }, []);
 
     const handleNavigation = useCallback(
