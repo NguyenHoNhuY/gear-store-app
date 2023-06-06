@@ -6,12 +6,16 @@ import { FaFacebook, FaHandsHelping, FaYoutube } from "react-icons/fa";
 type Props = {};
 
 const TopBar = (props: Props) => {
-    const [y, setY] = useState(window.scrollY);
+    const [y, setY] = useState<number>();
     const [displayClass, setDisplayClass] = useState<string>("");
+
+    useEffect(() => {
+        if (window.scrollY) setY(window.scrollY);
+    }, []);
 
     const handleNavigation = useCallback(
         (e: Event) => {
-            if (y < window.scrollY) {
+            if (y && y < window.scrollY) {
                 setDisplayClass("mt-[-41px]");
             } else if (window.scrollY === 0) {
                 setDisplayClass("");
