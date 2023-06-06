@@ -26,7 +26,7 @@ const TopBar = (props: Props) => {
     );
 
     useEffect(() => {
-        setY(window.scrollY);
+        if (window) setY(window.scrollY);
         window.addEventListener("scroll", handleNavigation);
 
         return () => {
