@@ -3,37 +3,40 @@
 @tailwind utilities;
 
 @layer components {
+    .logo {
+        width: calc(14% + 1px);
+    }
     .header__right__top__menu {
-        @apply col-span-3 grid grid-cols-4;
+        @apply col-span-3 ml-2 hidden grid-cols-4 lg:grid;
 
         &--item {
-            @apply flex h-full w-full items-center justify-center;
+            @apply flex h-full w-full items-center justify-start;
 
             &-icon {
                 @apply mr-2 h-6 w-6;
             }
 
             &-text {
-                @apply text-xs font-semibold uppercase hover:text-sm;
+                @apply text-[11px] font-semibold uppercase hover:tracking-widest;
             }
         }
     }
 
     .header__right__bottom__menu {
-        @apply col-span-5 my-auto grid h-fit grid-cols-5;
+        @apply col-span-5 my-auto hidden grid-cols-5  lg:grid;
 
         &--item {
             @apply flex h-full w-full items-center justify-center text-orange-500 hover:text-red-500;
 
             &-icon {
-                @apply mr-2 h-6 w-6;
+                @apply mr-2 h-5 w-5;
             }
 
             &-text {
                 @apply text-sm font-semibold uppercase;
             }
 
-            &:not(:last-child) {
+            &:not(:last-child) > span {
                 @apply border-r-2 border-r-orange-500;
             }
         }

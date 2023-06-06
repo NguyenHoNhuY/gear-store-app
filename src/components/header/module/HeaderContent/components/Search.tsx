@@ -49,7 +49,7 @@ const Search = (props: Props) => {
                                 placeholder="Nhập tên sản phẩm"
                                 onChange={(e) => field.onChange(e.target.value)}
                             />
-                            <div className="absolute right-0 top-1/2 flex h-full w-[10%] max-w-[100px] translate-y-[-50%] cursor-pointer items-center justify-center rounded-r-full bg-orange-500">
+                            <div className="absolute right-0 top-1/2 flex h-full w-[15%] max-w-[100px] translate-y-[-50%] cursor-pointer items-center justify-center rounded-r-full bg-orange-500 md:w-[10%]">
                                 <HiOutlineSearch className="h-5 w-5 text-white" />
                             </div>
                         </span>

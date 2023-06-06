@@ -9,6 +9,10 @@
 @layer components {
 }
 
+body::-webkit-scrollbar-track {
+    background: #fff !important;
+}
+
 .p-divider.p-divider-horizontal::before {
     border-top-color: #d4d4d4;
 }

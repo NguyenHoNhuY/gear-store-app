@@ -1,15 +1,46 @@
+"use client";
 import Link from "next/link";
+import { useCallback, useEffect, useState } from "react";
 import { FaFacebook, FaHandsHelping, FaYoutube } from "react-icons/fa";
 
 type Props = {};
 
 const TopBar = (props: Props) => {
+    const [y, setY] = useState(window.scrollY);
+    const [displayClass, setDisplayClass] = useState<string>("");
+
+    const handleNavigation = useCallback(
+        (e: Event) => {
+            if (y < window.scrollY) {
+                setDisplayClass("mt-[-41px]");
+            } else if (window.scrollY === 0) {
+                setDisplayClass("");
+            }
+            setY(window.scrollY);
+        },
+        [y]
+    );
+
+    useEffect(() => {
+        setY(window.scrollY);
+        window.addEventListener("scroll", handleNavigation);
+
+        return () => {
+            window.removeEventListener("scroll", handleNavigation);
+        };
+    }, [handleNavigation]);
+
     return (
-        <div className="container relative top-0 mx-auto flex scroll-mt-[-50px] items-center justify-between py-1">
+        <div
+            className={
+                "container relative top-0 mx-auto flex items-center justify-center pt-1 transition-all duration-500 ease-out lg:justify-between " +
+                displayClass
+            }
+        >
             <p className="text-sm font-light">
                 Chào mừng bạn đến với Gear Store
             </p>
-            <div className="flex items-center">
+            <div className="hidden items-center justify-center lg:flex">
                 <Link
                     className="mr-2 flex items-center text-sm font-light"
                     title="Tuyển dụng"

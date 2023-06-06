@@ -9,12 +9,12 @@ type Props = {};
 
 const HeaderMainMenu = (props: Props) => {
     return (
-        <div className="container mx-auto mb-2 flex items-center">
-            <span className="flex w-[223px] cursor-pointer select-none items-center rounded-md border-[1px] border-neutral-700 bg-neutral-700 py-1 pl-2 text-white">
-                <FaBars className="mr-2" />
-                Danh mục sản phẩm
-            </span>
-            <div className="header__main__right__menu">
+        <div className="container mx-auto mb-2 hidden items-center lg:flex">
+            <div className="flex h-full w-[14%] select-none items-center whitespace-nowrap rounded-md border-none bg-neutral-700 py-2 text-[12px] font-medium text-white">
+                <FaBars className="mx-2" />
+                <p className="">Danh mục sản phẩm</p>
+            </div>
+            <div className="header__main__right__menu ">
                 <Link className="header__main__right__menu--item" href="/">
                     <FaCcAmazonPay className="header__main__right__menu--item-icon" />
                     Hướng dẫn thanh toán

@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind components;
+
+@layer components {
+    .mega__menu__nav {
+        @apply w-[14%];
+
+        .main__menu {
+            @apply relative w-full rounded-md bg-white;
+
+            &--item {
+                @apply w-full;
+
+                .on__mouse__move {
+                    & {
+                        @apply rounded-l-md rounded-bl-md bg-orange-500 text-white;
+                    }
+
+                    &:before {
+                        @apply absolute left-full top-0 z-40 block h-0 w-0 border-b-[18px] border-l-[18px] border-r-0 border-t-[18px] border-solid border-y-transparent border-l-orange-500 content-[""];
+                    }
+                }
+
+                &-link {
+                    @apply relative flex h-9 w-full items-center justify-start py-1.5 pl-2;
+
+                    &--icon {
+                        @apply mr-2 !text-black;
+                    }
+                }
+
+                .mega__menu {
+                    left: calc(100% + 0.5rem);
+                    @apply absolute top-0  h-full w-[615%] rounded-md bg-slate-50 p-5;
+
+                    &__column {
+                        @apply grid w-10/12 grid-cols-5 justify-start gap-x-5 gap-y-5;
+
+                        &--item {
+                            @apply flex flex-col leading-5;
+
+                            &-label {
+                                @apply mb-1 text-[15px] font-medium text-orange-500;
+                            }
+                            &-filter {
+                                @apply text-[13px] font-light text-textColorBlack hover:text-orange-600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

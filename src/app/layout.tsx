@@ -15,7 +15,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-    title: "Gear Store",
+    title: "Gear Store - Store of me",
     description: "Store of me",
 };
 
@@ -25,17 +25,13 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html
-            lang="en"
-            suppressHydrationWarning={true}
-            className="scroll-smooth"
-        >
-            <body className={inter.className + " " + "relative"}>
+        <html lang="en" suppressHydrationWarning={true}>
+            <body className={inter.className + " relative"}>
                 <Header>
                     <TopBar />
-                    <Divider className="!my-2" />
+                    <Divider className="!my-2 hidden lg:block" />
                     <HeaderContent />
-                    <Divider className="!my-2" />
+                    <Divider className="!mb-2 !mt-0 hidden lg:block" />
                     <HeaderMainMenu />
                 </Header>
                 {children}
