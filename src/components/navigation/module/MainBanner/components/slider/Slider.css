@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .carousel {
+        @apply relative h-full w-full;
+
+        &__indicators {
+            @apply absolute bottom-5 left-1/2 z-[1] w-3/5 -translate-x-1/2 list-none text-center;
+
+            &--item {
+                @apply m-1 mx-2 inline-block h-1 w-8 cursor-pointer rounded-md bg-gray-300/70;
+            }
+        }
+
+        &__control {
+            &--left {
+                @apply left-0 bg-gradient-to-r;
+            }
+
+            &--right {
+                @apply right-0 bg-gradient-to-l;
+            }
+
+            &--button {
+                @apply absolute top-0 z-[1] flex h-full w-1/6 select-none items-center justify-center from-black/[0.5] to-transparent bg-repeat-x hover:opacity-90;
+
+                &:hover .carousel__control--icon {
+                    @apply !text-white;
+                }
+                .carousel__control--icon {
+                    @apply h-8 w-8 cursor-pointer text-gray-300/70;
+                }
+            }
+        }
+
+        &__inner {
+            @apply relative h-full w-full overflow-hidden;
+
+            &--item {
+                @apply absolute top-0 hidden h-full w-full transition-all duration-500 ease-linear;
+            }
+        }
+    }
+}
+
+.right__action--in {
+    animation: right__action--in 0.8s forwards;
+}
+
+@keyframes right__action--in {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.right__action--out {
+    display: block;
+    animation: right__action--out 0.8s forwards;
+}
+
+@keyframes right__action--out {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.left__action--in {
+    animation: left__action--in 0.8s forwards;
+}
+
+@keyframes left__action--in {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.left__action--out {
+    display: block;
+    animation: left__action--out 0.8s forwards;
+}
+
+@keyframes left__action--out {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
