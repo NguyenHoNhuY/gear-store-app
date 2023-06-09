@@ -7,7 +7,7 @@
         @apply relative h-full w-full;
 
         &__indicators {
-            @apply absolute bottom-5 left-1/2 z-[1] w-3/5 -translate-x-1/2 list-none text-center;
+            @apply absolute bottom-5 left-1/2 z-[1] w-3/5 -translate-x-1/2 list-none text-center transition-all;
 
             &--item {
                 @apply m-1 mx-2 inline-block h-1 w-8 cursor-pointer rounded-md bg-gray-300/70;

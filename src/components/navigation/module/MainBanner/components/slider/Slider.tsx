@@ -64,7 +64,10 @@ const Slider = (props: Props) => {
                     {sliderImages?.map((_, index) => (
                         <li
                             key={index}
-                            className="carousel__indicators--item"
+                            className={
+                                "carousel__indicators--item" +
+                                (activeSlide === index ? " bg-white" : "")
+                            }
                         />
                     ))}
                 </ol>

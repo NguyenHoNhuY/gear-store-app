@@ -7,7 +7,7 @@
         @apply w-[14%];
 
         .main__menu {
-            @apply relative w-full  rounded-bl-md rounded-tl-md  bg-white;
+            @apply relative w-full  rounded-bl-md rounded-tl-md  bg-white py-2;
 
             &--item {
                 @apply w-full;
@@ -23,16 +23,16 @@
                 }
 
                 &-link {
-                    @apply relative flex h-9 w-full items-center justify-start py-1.5 pl-2;
+                    @apply relative flex h-9 w-full items-center justify-start py-1.5 pl-2 text-[12px] font-medium text-textColorBlack;
 
                     &--icon {
-                        @apply mr-2 !text-black;
+                        @apply mr-2 h-5 w-5 !text-black;
                     }
                 }
 
                 .mega__menu {
                     left: calc(100% + 0.5rem);
-                    @apply absolute top-0  z-10 h-full w-[615%] rounded-md bg-slate-50 p-5;
+                    @apply absolute top-0  z-10 h-full w-[615%] rounded-br-md rounded-tr-md bg-slate-50 p-5;
 
                     &__column {
                         @apply grid w-10/12 grid-cols-5 justify-start gap-x-5 gap-y-5;

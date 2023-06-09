@@ -1,4 +1,17 @@
-import { AiOutlineLaptop } from "react-icons/ai";
+import { AiOutlineApple } from "react-icons/ai";
+import {
+    BsGpuCard,
+    BsHeadphones,
+    BsKeyboard,
+    BsLaptop,
+    BsMouse,
+    BsRouter,
+    BsUsbDrive,
+} from "react-icons/bs";
+import { GiOfficeChair } from "react-icons/gi";
+import { GrCloudComputer } from "react-icons/gr";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { LuMonitorSpeaker } from "react-icons/lu";
 
 export type MenuItem = {
     label: string;
@@ -17,7 +30,7 @@ export type MenuItem = {
 export const mainMenuItems: MenuItem[] = [
     {
         label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
+        icon: <BsLaptop className="main__menu--item-link--icon" />,
         menuItemHref: "/",
         subItem: [
             {
@@ -29,241 +42,169 @@ export const mainMenuItems: MenuItem[] = [
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "ACER",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "MSI",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "LENOVO",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "HP",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "DELL",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "LG",
                         subItemFilterHref: "/",
                     },
                 ],
             },
             {
-                subItemLabel: "Thương hiệu",
+                subItemLabel: "Giá bán",
                 subItemHref: "/",
                 subItemFilter: [
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Dưới 15 triệu",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Từ 15 đến 20 triệu",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Trên 20 triệu",
                         subItemFilterHref: "/",
                     },
                 ],
             },
             {
-                subItemLabel: "Thương hiệu",
+                subItemLabel: "CPU Intel - AMD",
                 subItemHref: "/",
                 subItemFilter: [
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Intel Core i3",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Intel Core i5",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Intel Core i7",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "AMD Ryzen",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Intel Gen 13",
                         subItemFilterHref: "/",
                     },
                 ],
             },
             {
-                subItemLabel: "Thương hiệu",
+                subItemLabel: "Nhu cầu sử dụng",
                 subItemHref: "/",
                 subItemFilter: [
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Đồ họa - Studio",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Học sinh - Sinh viên",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Mỏng nhẹ cao cấp",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Studio RTX 40 Series",
                         subItemFilterHref: "/",
                     },
                 ],
             },
             {
-                subItemLabel: "Thương hiệu",
+                subItemLabel: "Linh kiện Laptop",
                 subItemHref: "/",
                 subItemFilter: [
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Ram Laptop",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "SSD Laptop",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Ổ cứng di động",
                         subItemFilterHref: "/",
                     },
                 ],
             },
             {
-                subItemLabel: "Thương hiệu",
+                subItemLabel: "Phụ kiện Laptop",
                 subItemHref: "/",
                 subItemFilter: [
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Balo - Túi chống sốc",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Đế tản nhiệt Laptop",
                         subItemFilterHref: "/",
                     },
                 ],
             },
             {
-                subItemLabel: "Thương hiệu",
+                subItemLabel: "Laptop ASUS",
                 subItemHref: "/",
                 subItemFilter: [
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "ASUS OLED Series",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "VivoBook Series",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "VivoBook Pro Series",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "ZenBook Series",
                         subItemFilterHref: "/",
                     },
                 ],
             },
             {
-                subItemLabel: "Thương hiệu",
+                subItemLabel: "Laptop MSI",
                 subItemHref: "/",
                 subItemFilter: [
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Modern Series",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Prestige Series",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Summit Series",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "CREATOR Series",
                         subItemFilterHref: "/",
                     },
                 ],
@@ -271,8 +212,8 @@ export const mainMenuItems: MenuItem[] = [
         ],
     },
     {
-        label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
+        label: "Laptop Gaming",
+        icon: <BsLaptop className="main__menu--item-link--icon" />,
         menuItemHref: "/",
         subItem: [
             {
@@ -382,8 +323,8 @@ export const mainMenuItems: MenuItem[] = [
         ],
     },
     {
-        label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
+        label: "PC KM Đặc Biệt",
+        icon: <LuMonitorSpeaker className="main__menu--item-link--icon" />,
         menuItemHref: "/",
         subItem: [
             {
@@ -493,8 +434,8 @@ export const mainMenuItems: MenuItem[] = [
         ],
     },
     {
-        label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
+        label: "PC Gaming",
+        icon: <LuMonitorSpeaker className="main__menu--item-link--icon" />,
         menuItemHref: "/",
         subItem: [
             {
@@ -604,8 +545,8 @@ export const mainMenuItems: MenuItem[] = [
         ],
     },
     {
-        label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
+        label: "PC Đồ Họa",
+        icon: <LuMonitorSpeaker className="main__menu--item-link--icon" />,
         menuItemHref: "/",
         subItem: [
             {
@@ -715,8 +656,8 @@ export const mainMenuItems: MenuItem[] = [
         ],
     },
     {
-        label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
+        label: "PC Doanh Nghiệp",
+        icon: <GrCloudComputer className="main__menu--item-link--icon" />,
         menuItemHref: "/",
         subItem: [
             {
@@ -826,8 +767,8 @@ export const mainMenuItems: MenuItem[] = [
         ],
     },
     {
-        label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
+        label: "Linh kiện PC",
+        icon: <BsGpuCard className="main__menu--item-link--icon" />,
         menuItemHref: "/",
         subItem: [
             {
@@ -937,8 +878,8 @@ export const mainMenuItems: MenuItem[] = [
         ],
     },
     {
-        label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
+        label: "Apple",
+        icon: <AiOutlineApple className="main__menu--item-link--icon" />,
         menuItemHref: "/",
         subItem: [
             {
@@ -1048,8 +989,8 @@ export const mainMenuItems: MenuItem[] = [
         ],
     },
     {
-        label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
+        label: "Bàn phím",
+        icon: <BsKeyboard className="main__menu--item-link--icon" />,
         menuItemHref: "/",
         subItem: [
             {
@@ -1159,8 +1100,8 @@ export const mainMenuItems: MenuItem[] = [
         ],
     },
     {
-        label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
+        label: "Chuột + Lót chuột",
+        icon: <BsMouse className="main__menu--item-link--icon" />,
         menuItemHref: "/",
         subItem: [
             {
@@ -1270,8 +1211,8 @@ export const mainMenuItems: MenuItem[] = [
         ],
     },
     {
-        label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
+        label: "Tai nghe - Loa",
+        icon: <BsHeadphones className="main__menu--item-link--icon" />,
         menuItemHref: "/",
         subItem: [
             {
@@ -1381,8 +1322,8 @@ export const mainMenuItems: MenuItem[] = [
         ],
     },
     {
-        label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
+        label: "Ghế - Bàn",
+        icon: <GiOfficeChair className="main__menu--item-link--icon" />,
         menuItemHref: "/",
         subItem: [
             {
@@ -1492,8 +1433,8 @@ export const mainMenuItems: MenuItem[] = [
         ],
     },
     {
-        label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
+        label: "Phần mềm & Mạng",
+        icon: <BsRouter className="main__menu--item-link--icon" />,
         menuItemHref: "/",
         subItem: [
             {
@@ -1603,8 +1544,8 @@ export const mainMenuItems: MenuItem[] = [
         ],
     },
     {
-        label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
+        label: "Phụ kiện",
+        icon: <BsUsbDrive className="main__menu--item-link--icon" />,
         menuItemHref: "/",
         subItem: [
             {
@@ -1714,119 +1655,8 @@ export const mainMenuItems: MenuItem[] = [
         ],
     },
     {
-        label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
-        menuItemHref: "/",
-        subItem: [
-            {
-                subItemLabel: "Thương hiệu",
-                subItemHref: "/",
-                subItemFilter: [
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                ],
-            },
-            {
-                subItemLabel: "Thương hiệu",
-                subItemHref: "/",
-                subItemFilter: [
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                ],
-            },
-            {
-                subItemLabel: "Thương hiệu",
-                subItemHref: "/",
-                subItemFilter: [
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                ],
-            },
-            {
-                subItemLabel: "Thương hiệu",
-                subItemHref: "/",
-                subItemFilter: [
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                ],
-            },
-        ],
-    },
-    {
-        label: "Laptop",
-        icon: <AiOutlineLaptop className="main__menu--item-link--icon" />,
+        label: "Thủ thuật - Giải đáp",
+        icon: <HiOutlineLightBulb className="main__menu--item-link--icon" />,
         menuItemHref: "/",
         subItem: [
             {

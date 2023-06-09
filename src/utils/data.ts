@@ -22,59 +22,59 @@ export const sliderImages = [
         href: "/",
         alt: "",
     },
-    // {
-    //     src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_5.jpg?v=36751",
-    //     href: "/",
-    //     alt: "",
-    // },
-    // {
-    //     src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_6.jpg?v=36751",
-    //     href: "/",
-    //     alt: "",
-    // },
-    // {
-    //     src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_7.jpg?v=36751",
-    //     href: "/",
-    //     alt: "",
-    // },
-    // {
-    //     src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_8.jpg?v=36751",
-    //     href: "/",
-    //     alt: "",
-    // },
-    // {
-    //     src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_9.jpg?v=36751",
-    //     href: "/",
-    //     alt: "",
-    // },
-    // {
-    //     src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_10.jpg?v=36751",
-    //     href: "/",
-    //     alt: "",
-    // },
-    // {
-    //     src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_11.jpg?v=36751",
-    //     href: "/",
-    //     alt: "",
-    // },
-    // {
-    //     src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_12.jpg?v=36751",
-    //     href: "/",
-    //     alt: "",
-    // },
-    // {
-    //     src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_13.jpg?v=36751",
-    //     href: "/",
-    //     alt: "",
-    // },
-    // {
-    //     src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_14.jpg?v=36751",
-    //     href: "/",
-    //     alt: "",
-    // },
-    // {
-    //     src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_15.jpg?v=36751",
-    //     href: "/",
-    //     alt: "",
-    // },
+    {
+        src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_5.jpg?v=36751",
+        href: "/",
+        alt: "",
+    },
+    {
+        src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_6.jpg?v=36751",
+        href: "/",
+        alt: "",
+    },
+    {
+        src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_7.jpg?v=36751",
+        href: "/",
+        alt: "",
+    },
+    {
+        src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_8.jpg?v=36751",
+        href: "/",
+        alt: "",
+    },
+    {
+        src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_9.jpg?v=36751",
+        href: "/",
+        alt: "",
+    },
+    {
+        src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_10.jpg?v=36751",
+        href: "/",
+        alt: "",
+    },
+    {
+        src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_11.jpg?v=36751",
+        href: "/",
+        alt: "",
+    },
+    {
+        src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_12.jpg?v=36751",
+        href: "/",
+        alt: "",
+    },
+    {
+        src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_13.jpg?v=36751",
+        href: "/",
+        alt: "",
+    },
+    {
+        src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_14.jpg?v=36751",
+        href: "/",
+        alt: "",
+    },
+    {
+        src: "https://theme.hstatic.net/1000026716/1000440777/14/slideshow_15.jpg?v=36751",
+        href: "/",
+        alt: "",
+    },
 ];
