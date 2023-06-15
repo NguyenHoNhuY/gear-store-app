@@ -45,11 +45,11 @@ const Search = (props: Props) => {
                         />
                         <span className="p-input-icon-right w-full">
                             <InputText
-                                className="w-full rounded-full border-none py-[6px] pl-4 text-sm"
+                                className="w-full rounded-md border-none py-[6px] pl-4 text-sm outline-none enabled:focus:!shadow-none"
                                 placeholder="Nhập tên sản phẩm"
                                 onChange={(e) => field.onChange(e.target.value)}
                             />
-                            <div className="absolute right-0 top-1/2 flex h-full w-[15%] max-w-[100px] translate-y-[-50%] cursor-pointer items-center justify-center rounded-r-full bg-orange-500 md:w-[10%]">
+                            <div className="absolute right-0 top-1/2 flex h-full w-[15%] max-w-[100px] translate-y-[-50%] cursor-pointer items-center justify-center rounded-r-md bg-main-color md:w-[10%]">
                                 <HiOutlineSearch className="h-5 w-5 text-white" />
                             </div>
                         </span>

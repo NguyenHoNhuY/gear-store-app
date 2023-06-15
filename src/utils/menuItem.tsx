@@ -185,6 +185,28 @@ export const mainMenuItems: MenuItem[] = [
                         subItemFilterLabel: "ZenBook Series",
                         subItemFilterHref: "/",
                     },
+                    {
+                        subItemFilterLabel: "ExpertBook Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "ProArt StudioBook Series",
+                        subItemFilterHref: "/",
+                    },
+                ],
+            },
+            {
+                subItemLabel: "Laptop ACER",
+                subItemHref: "/",
+                subItemFilter: [
+                    {
+                        subItemFilterLabel: "Aspire Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Swift Series",
+                        subItemFilterHref: "/",
+                    },
                 ],
             },
             {
@@ -209,6 +231,72 @@ export const mainMenuItems: MenuItem[] = [
                     },
                 ],
             },
+            {
+                subItemLabel: "Laptop LENOVO",
+                subItemHref: "/",
+                subItemFilter: [
+                    {
+                        subItemFilterLabel: "ThinkBook Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Ideapad Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Ideapad Pro Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "ThinkPad Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Yoga Series",
+                        subItemFilterHref: "/",
+                    },
+                ],
+            },
+            {
+                subItemLabel: "Laptop DELL",
+                subItemHref: "/",
+                subItemFilter: [
+                    {
+                        subItemFilterLabel: "Inspiron Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Vostro Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Latitude Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "XPS Series",
+                        subItemFilterHref: "/",
+                    },
+                ],
+            },
+            {
+                subItemLabel: "Laptop HP",
+                subItemHref: "/",
+                subItemFilter: [
+                    {
+                        subItemFilterLabel: "Pavilion Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Envy Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "ProBook Series",
+                        subItemFilterHref: "/",
+                    },
+                ],
+            },
         ],
     },
     {
@@ -221,101 +309,275 @@ export const mainMenuItems: MenuItem[] = [
                 subItemHref: "/",
                 subItemFilter: [
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "ACER / PREDATOR",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "ASUS / ROG",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "MSI",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "LENOVO",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                ],
-            },
-            {
-                subItemLabel: "Thương hiệu",
-                subItemHref: "/",
-                subItemFilter: [
-                    {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "DELL",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "GIGABYTE / AORUS",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "HP",
                         subItemFilterHref: "/",
                     },
                 ],
             },
             {
-                subItemLabel: "Thương hiệu",
+                subItemLabel: "Giá bán",
                 subItemHref: "/",
                 subItemFilter: [
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Dưới 20 triệu",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Từ 20 đến 25 triệu",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Từ 25 đến 30 triệu",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Trên 30 triệu",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Gaming cao cấp",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Gaming RTX 40 Series",
                         subItemFilterHref: "/",
                     },
                 ],
             },
             {
-                subItemLabel: "Thương hiệu",
+                subItemLabel: "ACER | PREDATOR",
                 subItemHref: "/",
                 subItemFilter: [
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Nitro Series",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Aspire Series",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Predator Series",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "ConceptD Series",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "ACER RTX 40 Series",
+                        subItemFilterHref: "/",
+                    },
+                ],
+            },
+            {
+                subItemLabel: "ASUS | ROG Gaming",
+                subItemHref: "/",
+                subItemFilter: [
+                    {
+                        subItemFilterLabel: "ROG Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "TUF Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Zephyrus Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "ROG Strix G",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "ROG Flow Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "TUF RTX 40 Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "ROG RTX 40 Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "ROG Ally",
+                        subItemFilterHref: "/",
+                    },
+                ],
+            },
+            {
+                subItemLabel: "MSI Gaming",
+                subItemHref: "/",
+                subItemFilter: [
+                    {
+                        subItemFilterLabel: "GF Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "GS Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Bravo Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Creator Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "MSI AMD Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Crosshair Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "MSI RTX 40 Series",
+                        subItemFilterHref: "/",
+                    },
+                ],
+            },
+            {
+                subItemLabel: "LENOVO Gaming",
+                subItemHref: "/",
+                subItemFilter: [
+                    {
+                        subItemFilterLabel: "Legion Gaming",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Ideapad Gaming",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Lenovo RTX 40 Series",
+                        subItemFilterHref: "/",
+                    },
+                ],
+            },
+            {
+                subItemLabel: "DELL Gaming",
+                subItemHref: "/",
+                subItemFilter: [
+                    {
+                        subItemFilterLabel: "Dell Gaming G Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Alienware Series",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Dell RTX 40 Series",
+                        subItemFilterHref: "/",
+                    },
+                ],
+            },
+            {
+                subItemLabel: "GIGABYTE Gaming",
+                subItemHref: "/",
+                subItemFilter: [
+                    {
+                        subItemFilterLabel: "GIGABYTE G5 | G7",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "GIGABYTE AORUS",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "GIGABYTE AREO",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "GIGABYTE RTX Series",
+                        subItemFilterHref: "/",
+                    },
+                ],
+            },
+            {
+                subItemLabel: "Card đồ họa",
+                subItemHref: "/",
+                subItemFilter: [
+                    {
+                        subItemFilterLabel: "GTX 1650",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "GTX 3050 / 3050Ti",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "GTX 3060",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "GTX 3070 / 3080",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "AMD Radeon RX",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "RTX 40 Series",
+                        subItemFilterHref: "/",
+                    },
+                ],
+            },
+            {
+                subItemLabel: "Linh kiện Laptop",
+                subItemHref: "/",
+                subItemFilter: [
+                    {
+                        subItemFilterLabel: "Ram Laptop",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "SSD Laptop",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Ổ cứng di động",
+                        subItemFilterHref: "/",
+                    },
+                ],
+            },
+            {
+                subItemLabel: "Phụ kiện Laptop",
+                subItemHref: "/",
+                subItemFilter: [
+                    {
+                        subItemFilterLabel: "Đế tản nhiệt",
                         subItemFilterHref: "/",
                     },
                 ],
@@ -328,105 +590,186 @@ export const mainMenuItems: MenuItem[] = [
         menuItemHref: "/",
         subItem: [
             {
-                subItemLabel: "Thương hiệu",
+                subItemLabel: "GIÁ TỐT CHƠI HÈ",
                 subItemHref: "/",
                 subItemFilter: [
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Viper i3070Ti (11th) - 24,990K",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Viper Plus a3050 - Mua màn 1,000₫",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel:
+                            "Viper i1660s (11th) - Mua tản 1,000₫",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
-                        subItemFilterHref: "/",
-                    },
-                    {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Minion i1650 9,990K",
                         subItemFilterHref: "/",
                     },
                 ],
             },
             {
-                subItemLabel: "Thương hiệu",
+                subItemLabel: "kHUYẾN MÃI ĐẶC BIỆT",
                 subItemHref: "/",
                 subItemFilter: [
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel:
+                            "Titan Plus i4090 - Tặng voucher 15tr",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel:
+                            "Phantom Plus i4070Ti - Tặng tản nhiệt",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Phantom i4070 - Tặng tản nhiệt",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Phantom i4060TI - Tặng tản nhiệt",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel:
+                            "Phantom Plus i3070Ti - Tặng tản nhiệt",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Viper Plus i4070 - Tặng tản nhiệt",
                         subItemFilterHref: "/",
                     },
                 ],
             },
             {
-                subItemLabel: "Thương hiệu",
+                subItemLabel: "KHUYẾN MÃI ĐẶC BIỆT",
                 subItemHref: "/",
                 subItemFilter: [
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel:
+                            "Viper Plus i3070Ti - Tặng tản nhiệt",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel:
+                            "Viper Plus 13060 WHITE - Voucher 2tr",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel:
+                            "Viper i3060 - Voucher màn hình 2tr ",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel:
+                            "Viper i3050 - Voucher màn hình 1tr500",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel:
+                            "Minion i3050 - Voucher màn hình 1tr500",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Minion i1650 WHITE - Tặng RAM",
                         subItemFilterHref: "/",
                     },
                 ],
             },
             {
-                subItemLabel: "Thương hiệu",
+                subItemLabel: "GVN WHITE EDITION",
                 subItemHref: "/",
                 subItemFilter: [
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Poseidon 9 i3090",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Poseidon S WHITE",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Phantom Plus i4080",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Viper Plus i3060",
                         subItemFilterHref: "/",
                     },
                     {
-                        subItemFilterLabel: "ASUS",
+                        subItemFilterLabel: "Minion i1650",
+                        subItemFilterHref: "/",
+                    },
+                ],
+            },
+            {
+                subItemLabel: "GVN POSEIDON - CUSTOM NƯỚC",
+                subItemHref: "/",
+                subItemFilter: [
+                    {
+                        subItemFilterLabel:
+                            "Poseidon 5 i3060 - Tặng tản nhiệt ",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel:
+                            "Poseidon 7 13060 - Tặng tản nhiệt custom",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Poseidon S WHITE - i5 - 3060",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Poseidon S - i5 - 3060",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Poseidon 7 i3080",
+                        subItemFilterHref: "/",
+                    },
+                ],
+            },
+            {
+                subItemLabel: "GIAN HÀNG CHÍNH HÃNG",
+                subItemHref: "/",
+                subItemFilter: [
+                    {
+                        subItemFilterLabel: "Asus",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "AMD",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Corsair",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "NZXT",
+                        subItemFilterHref: "/",
+                    },
+                ],
+            },
+            {
+                subItemLabel: "Đèn thông minh Nanoleaf",
+                subItemHref: "/",
+                subItemFilter: [
+                    {
+                        subItemFilterLabel: "Bộ bắt đầu",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Bộ mở rộng",
+                        subItemFilterHref: "/",
+                    },
+                    {
+                        subItemFilterLabel: "Poseidon 9 i3090",
                         subItemFilterHref: "/",
                     },
                 ],

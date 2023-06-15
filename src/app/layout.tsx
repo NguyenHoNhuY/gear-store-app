@@ -5,7 +5,6 @@ import "primereact/resources/themes/soho-light/theme.css";
 import "primereact/resources/primereact.min.css";
 
 // import Divider from "src/components/common/Divider";
-import Divider from "src/components/common/Divider";
 import Header from "src/components/header/Header";
 import HeaderContent from "src/components/header/module/HeaderContent/HeaderContent";
 import HeaderMainMenu from "src/components/header/module/HeaderMainMenu/HeaderMainMenu";
@@ -29,9 +28,7 @@ export default function RootLayout({
             <body className={inter.className + " relative"}>
                 <Header>
                     <TopBar />
-                    <Divider className="!my-2 hidden lg:block" />
                     <HeaderContent />
-                    <Divider className="!mb-2 !mt-0 hidden lg:block" />
                     <HeaderMainMenu />
                 </Header>
                 {children}

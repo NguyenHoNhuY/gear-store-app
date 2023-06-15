@@ -7,6 +7,9 @@
 }
 
 @layer components {
+    .border__bottom {
+        @apply border-b-[1px] border-b-gray-color/10;
+    }
 }
 
 body::-webkit-scrollbar-track {

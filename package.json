@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "open-turbo": "yarn open-browser && next dev --turbo",
+        "turbo": "yarn open-browser && next dev --turbo",
         "open": "yarn open-browser && next dev",
         "dev-turbo": "next dev --turbo",
         "dev": "next dev",
