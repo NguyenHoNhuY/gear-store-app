@@ -4,13 +4,15 @@
 
 @layer components {
     .header__main__right__menu {
-        @apply ml-2 grid w-[86%] gap-2 md:grid-cols-4;
+        @apply ml-2 grid w-[86%] gap-2 md:grid-cols-5;
 
         &--item {
-            @apply flex select-none items-center justify-center rounded-md bg-[length:200px_100px] py-[6px] pl-2 text-[11px] font-medium uppercase text-white hover:bg-white hover:text-main-color;
+            @apply flex select-none items-center justify-center rounded-md bg-[length:200px_100px] py-[6px] pl-2 text-[11px] font-medium uppercase text-white hover:text-main-color;
 
             &:hover {
-                box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 8px 0px inset;
+                background: white !important;
+                box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+                transition: 300ms ease-in-out;
             }
 
             &-icon {

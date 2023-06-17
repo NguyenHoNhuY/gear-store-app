@@ -7,7 +7,7 @@
         @apply w-[14%];
 
         .main__menu {
-            @apply relative w-full  rounded-bl-md rounded-tl-md  bg-white py-2;
+            @apply relative w-full  rounded-md  bg-white;
 
             &--item {
                 @apply w-full;
@@ -32,7 +32,7 @@
 
                 .mega__menu {
                     left: calc(100% + 0.5rem);
-                    @apply absolute top-0  z-10 h-full w-[615%] rounded-br-md rounded-tr-md bg-slate-50 p-5;
+                    @apply absolute top-0  z-10 h-full w-[615%] rounded-md bg-slate-50 p-5;
 
                     &__column {
                         @apply grid w-full grid-cols-6 justify-start gap-4;

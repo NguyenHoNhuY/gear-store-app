@@ -4,7 +4,7 @@ import MainMenu from "src/components/navigation/module/MainMenu/MainMenu";
 
 export default function Home() {
     return (
-        <main className="h-[120vh] md:mt-[160px]">
+        <main className="h-[120vh] md:mt-[157px]">
             <Navigation>
                 <MainMenu />
                 <MainBanner />

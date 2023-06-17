@@ -2,18 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import {
-    FaAddressCard,
-    FaBars,
-    FaGifts,
-    FaListAlt,
-    FaNewspaper,
-    FaPhone,
-    FaShoppingCart,
-    FaStore,
-    FaUserCircle,
-    FaYoutube,
-} from "react-icons/fa";
+import { BiCart, BiHeadphone, BiMapPin, BiUser } from "react-icons/bi";
+import { FaBars, FaShoppingCart } from "react-icons/fa";
+import { TbReportSearch } from "react-icons/tb";
 import "./HeaderContent.css";
 import Drawer from "./components/Drawer";
 import Search from "./components/Search";
@@ -21,7 +12,7 @@ import Search from "./components/Search";
 type Props = {};
 
 type MenuItem = {
-    name: string;
+    name: JSX.Element;
     icon: JSX.Element;
     href: string;
 };
@@ -31,76 +22,56 @@ const HeaderContent = (props: Props) => {
 
     const menuTopItem: MenuItem[] = [
         {
-            name: "Đăng ký",
+            name: (
+                <>
+                    <p className="text__top">Hotline</p>
+                    <p className="text__bottom">12391</p>
+                </>
+            ),
             icon: (
-                <FaAddressCard className="header__right__top__menu--item-icon" />
+                <BiHeadphone className="header__right__top__menu--item-icon" />
             ),
             href: "/",
         },
         {
-            name: "Đăng nhập",
+            name: (
+                <>
+                    <p className="text__top">Hệ thống</p>
+                    <p className="text__bottom">showroom</p>
+                </>
+            ),
+            icon: <BiMapPin className="header__right__top__menu--item-icon" />,
+            href: "/",
+        },
+        {
+            name: (
+                <>
+                    <p className="text__top">Tra cứu</p>
+                    <p className="text__bottom">đơn hàng</p>
+                </>
+            ),
             icon: (
-                <FaUserCircle className="header__right__top__menu--item-icon" />
+                <TbReportSearch className="header__right__top__menu--item-icon" />
             ),
             href: "/",
         },
         {
-            name: "Khuyến mãi",
-            icon: <FaGifts className="header__right__top__menu--item-icon" />,
-            href: "/",
-        },
-        {
-            name: "Giỏ hàng",
-            icon: (
-                <FaShoppingCart className="header__right__top__menu--item-icon" />
+            name: (
+                <>
+                    <p className="text__top">Giỏ</p>
+                    <p className="text__bottom">hàng</p>
+                </>
             ),
-            href: "/",
-        },
-    ];
-
-    const menuBottomItem: MenuItem[] = [
-        {
-            name: "tổng đài",
-            icon: (
-                <FaPhone className="header__right__bottom__menu--item-icon" />
-            ),
-            href: "/",
-        },
-        {
-            name: "videos",
-            icon: (
-                <FaYoutube className="header__right__bottom__menu--item-icon" />
-            ),
-            href: "/",
-        },
-        {
-            name: "tin tức",
-            icon: (
-                <FaNewspaper className="header__right__bottom__menu--item-icon" />
-            ),
-            href: "/",
-        },
-        {
-            name: "tuyển dụng",
-            icon: (
-                <FaListAlt className="header__right__bottom__menu--item-icon" />
-            ),
-            href: "/",
-        },
-        {
-            name: "hệ thống",
-            icon: (
-                <FaStore className="header__right__bottom__menu--item-icon" />
-            ),
+            icon: <BiCart className="header__right__top__menu--item-icon" />,
             href: "/",
         },
     ];
 
     return (
-        <div className="border__bottom w-full">
-            <div className="container mx-auto flex items-center lg:py-2 ">
+        <div className="border__bottom  w-full">
+            <div className="header__content  ">
                 {/* logo */}
-                <span className="logo relative h-[65px]">
+                <span className="header__content--left col__left ">
                     <Image
                         src="/logo.png"
                         alt="logo"
@@ -127,8 +98,8 @@ const HeaderContent = (props: Props) => {
 
                 {/* header - right top block content */}
 
-                <div className="ml-2 mr-2 flex w-[86%] items-center justify-center lg:ml-4 lg:mr-0 lg:grid lg:auto-rows-auto lg:grid-cols-5 lg:grid-rows-2 lg:gap-y-0.5">
-                    <div className="col-span-2 flex w-full items-center">
+                <div className="header__content--right col__right ">
+                    <div className="header__content--right-search ">
                         <Search />
 
                         <Link
@@ -139,45 +110,31 @@ const HeaderContent = (props: Props) => {
                         </Link>
                     </div>
 
-                    <>
-                        {/* right top feature menu */}
-                        <div className="header__right__top__menu ">
-                            {menuTopItem?.map((item, index) => (
-                                <div
-                                    className="header__right__top__menu--item"
-                                    key={index + 100}
-                                >
-                                    {item.icon}
-                                    <Link
-                                        href={item.href}
-                                        className="header__right__top__menu--item-text"
-                                    >
-                                        {item.name}
-                                    </Link>
-                                </div>
-                            ))}
-                        </div>
-
-                        {/* right bottom feature menu */}
-                        <div className="header__right__bottom__menu h-full">
-                            {menuBottomItem?.map((item, index) => (
-                                <div
-                                    className="header__right__bottom__menu--item"
-                                    key={index}
-                                >
-                                    <span className="flex h-fit w-full items-center justify-center">
-                                        {item.icon}
-                                        <Link
-                                            href={item.href}
-                                            className="header__right__bottom__menu--item-text"
-                                        >
-                                            {item.name}
-                                        </Link>
-                                    </span>
-                                </div>
-                            ))}
-                        </div>
-                    </>
+                    {/* right top feature menu */}
+                    <div className="header__right__top__menu ">
+                        {menuTopItem?.map((item, index) => (
+                            <Link
+                                href={item.href}
+                                className="header__right__top__menu--item"
+                                key={index + 100}
+                            >
+                                {item.icon}
+                                <span className="header__right__top__menu--item-text">
+                                    {item.name}
+                                </span>
+                            </Link>
+                        ))}
+                        <Link
+                            href={"/"}
+                            className="header__right__top__menu--item rounded-md bg-main-color px-2 py-1 !text-white"
+                        >
+                            <BiUser className="header__right__top__menu--item-icon" />
+                            <span className="header__right__top__menu--item-text">
+                                <p className="text__top">Đăng</p>
+                                <p className="text__bottom">nhập</p>
+                            </span>
+                        </Link>
+                    </div>
                 </div>
 
                 <Drawer visible={visible} setVisible={setVisible} />

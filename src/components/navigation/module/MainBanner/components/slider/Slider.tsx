@@ -57,6 +57,19 @@ const Slider = (props: Props) => {
         }
     };
 
+    const handleClickChangeSlide = (index: number) => {
+        if (index === activeSlide) return;
+        setPreActiveSlide(activeSlide);
+        setActiveSlide(index);
+        if (index < activeSlide) {
+            setActiveSlideAction(" left__action--in");
+            setPreActiveSlideAction(" left__action--out");
+        } else {
+            setActiveSlideAction(" right__action--in");
+            setPreActiveSlideAction(" right__action--out");
+        }
+    };
+
     return (
         <div className={className + " " + "slider-wrap"}>
             <div className="carousel">
@@ -68,6 +81,7 @@ const Slider = (props: Props) => {
                                 "carousel__indicators--item" +
                                 (activeSlide === index ? " bg-white" : "")
                             }
+                            onClick={() => handleClickChangeSlide(index)}
                         />
                     ))}
                 </ol>

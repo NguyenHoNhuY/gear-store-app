@@ -3,41 +3,34 @@
 @tailwind utilities;
 
 @layer components {
-    .logo {
-        width: calc(14% + 1px);
-    }
-    .header__right__top__menu {
-        @apply col-span-3 ml-2 hidden grid-cols-4 lg:grid;
+    .header__content {
+        @apply container mx-auto grid grid-cols-7 items-center gap-2 lg:py-2;
 
-        &--item {
-            @apply flex h-full w-full items-center justify-start;
-
-            &-icon {
-                @apply mr-2 h-6 w-6;
-            }
-
-            &-text {
-                @apply text-[11px] font-semibold uppercase hover:tracking-widest;
-            }
+        &--left {
+            @apply relative h-[65px] w-full;
         }
-    }
 
-    .header__right__bottom__menu {
-        @apply col-span-5 my-auto hidden grid-cols-5  lg:grid;
+        &--right {
+            @apply flex h-[42px] items-center justify-center  lg:mr-0 lg:grid lg:auto-rows-auto lg:grid-cols-5 lg:grid-rows-1 lg:gap-6;
 
-        &--item {
-            @apply flex h-full w-full items-center justify-center text-main-color hover:text-orange-500;
-
-            &-icon {
-                @apply mr-2 h-5 w-5;
+            &-search {
+                @apply col-span-2 flex h-full w-full items-center;
             }
 
-            &-text {
-                @apply text-sm font-semibold uppercase;
-            }
+            .header__right__top__menu {
+                @apply col-span-3 hidden  lg:flex lg:items-center lg:justify-between;
 
-            &:not(:last-child) > span {
-                @apply border-r-2 border-r-orange-500;
+                &--item {
+                    @apply flex h-full w-fit items-center justify-end hover:text-main-color;
+
+                    &-icon {
+                        @apply mr-2  h-6 w-6;
+                    }
+
+                    &-text {
+                        @apply flex flex-col text-[11px] font-semibold uppercase;
+                    }
+                }
             }
         }
     }

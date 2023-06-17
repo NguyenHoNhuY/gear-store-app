@@ -39,6 +39,7 @@ const TopBar = (props: Props) => {
             <div
                 className={
                     "container relative top-0 mx-auto flex items-center justify-center py-1 transition-all duration-500 ease-out lg:justify-between" +
+                    " " +
                     displayClass
                 }
             >

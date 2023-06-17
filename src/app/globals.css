@@ -10,6 +10,13 @@
     .border__bottom {
         @apply border-b-[1px] border-b-gray-color/10;
     }
+    .col-left {
+        @apply col-start-1 col-end-2;
+    }
+
+    .col__right {
+        @apply col-start-2 col-end-8;
+    }
 }
 
 body::-webkit-scrollbar-track {
